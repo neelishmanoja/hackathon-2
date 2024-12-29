@@ -1,6 +1,12 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
-export default function Box2(prop: any) {
+interface propstype {
+    image : StaticImageData
+    title : string 
+    text : string
+}
+
+export default function Box2(prop: propstype) {
     return (
         <div>
             <div className="flex">

@@ -1,13 +1,26 @@
-// components/Selector.js
+
 "use client";
 import { useState } from "react";
 
-const Selector = ({ options, onChange } :any) => {
-  const [selected, setSelected] = useState("");
 
-  const handleChange = (event :any) => {
-    setSelected(event.target.value);
-    if (onChange) onChange(event.target.value);
+interface Option {
+  value: string;
+  label: string;
+}
+
+// Define the types for the props
+interface SelectorProps {
+  options: Option[];
+  onChange?: (value: string) => void;  // Optional callback for the selected value
+}
+
+const Selector = ({ options, onChange }: SelectorProps) => {
+  const [selected, setSelected] = useState<string>("");
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    setSelected(value);
+    if (onChange) onChange(value);
   };
 
   return (
@@ -20,7 +33,7 @@ const Selector = ({ options, onChange } :any) => {
         <option value="" disabled>
           Newest
         </option>
-        {options.map((option :any, index :any) => (
+        {options.map((option, index) => (
           <option key={index} value={option.value}>
             {option.label}
           </option>
@@ -31,3 +44,4 @@ const Selector = ({ options, onChange } :any) => {
 };
 
 export default Selector;
+

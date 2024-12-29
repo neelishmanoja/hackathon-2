@@ -6,7 +6,7 @@ import pic3 from "@/public/unsplash_mAQZ3X_8_l0.png";
 
 
 
-export default function () {
+export default function About() {
     return (
         <section className=" flex justify-center">
             <div className=" sm:flex">

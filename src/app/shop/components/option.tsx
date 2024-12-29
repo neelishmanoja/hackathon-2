@@ -9,7 +9,7 @@ export default function Option() {
     { value: "Option 3", label: "Traditional" },
   ];
 
-  const handleSelectionChange = (value :any) => {
+  const handleSelectionChange = (value :string) => {
     console.log("Selected value:", value);
   };
 

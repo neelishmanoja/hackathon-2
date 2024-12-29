@@ -1,6 +1,12 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export default function Teamcard(prop:any){
+interface propstype {
+    image : StaticImageData
+    title : string 
+    text : string
+}
+
+export default function Teamcard(prop:propstype){
     return(
         <div>
             <div>

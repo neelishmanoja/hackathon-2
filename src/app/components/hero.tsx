@@ -1,7 +1,7 @@
 import sideline from "@/public/side line.png"
 import hero from "@/public/Image.png"
 import Image from "next/image"
-import Link from "next/link"
+
 
 export default function Hero() {
     return (

@@ -15,7 +15,6 @@ import { LuSearch } from "react-icons/lu"; // Search Icon
 
 import Option from "./option";
 import Image from "next/image";
-import { PiClipboard } from "react-icons/pi";
 
 export default function Main() {
     return (
@@ -32,13 +31,13 @@ export default function Main() {
                             image={product}
                             title={"Fresh Lime"}
                             price={"45.00"}
-                            discount={15}
+                            discount={"15"}
                         />
                         <Products
                             image={product1}
                             title={"Chocolate Muffin"}
                             price={"28.00"}
-                            discount={0}
+                            discount={"0"}
                         />
 
 
@@ -46,63 +45,73 @@ export default function Main() {
                             image={product2}
                             title={"Burger"}
                             price={"45.00"}
-                            discount={55}
+                            discount={"55"}
                         />
                         <Products
                             image={product3}
                             title={"Country Burger"}
                             price={"45.00"}
-                            discount={50}
+                            discount={"50"}
                         />
                         <Products
                             image={product4}
                             title={"Drink"}
                             price={"23.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product5}
                             title={"Pizza"}
                             price={"43.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product6}
                             title={"Cheese Butter"}
                             price={"10.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product7}
                             title={"Sandwiches"}
                             price={"25.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product8}
                             title={"Chicken Chup"}
                             price={"12.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product3}
                             title={"Country Burger"}
                             price={"45.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product4}
                             title={"Drink"}
                             price={"23.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product5}
                             title={"Pizza"}
                             price={"43.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product6}
                             title={"Cheese Butter"}
                             price={"10.00"}
+                            discount={"0"}
                         />
                         <Products
                             image={product7}
                             title={"Sandwiches"}
                             price={"25.00"}
+                            discount={"0"}
                         />
                     </div>
                 </div>

@@ -9,7 +9,6 @@ import humburger from "@/public/Hamburger.png"
 import cookie from "@/public/Cookie.png"
 import wine from "@/public/Wine.png"
 import expirence from "@/public/Group 1000002063.png"
-import bg from "@/public/Group 1000002107.png"
 import clients from "@/public/Clients.png"
 
 export default function Chooseus() {

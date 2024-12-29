@@ -1,7 +1,6 @@
 import Image from "next/image";
 import maincoursepic from "@/public/chooseus4.png"
 import { FiCoffee } from "react-icons/fi";
-import clients from "@/public/Clients.png"
 import clients1 from "@/public/Group 1000002107.png"
 import logo from "@/public/Group.png"
 import logo1 from "@/public/Group (1).png"

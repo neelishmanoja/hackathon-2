@@ -1,8 +1,15 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
+interface propstype {
+  image : StaticImageData
+  price : string
+  discount : string
+  title : string
+}
 
 
 
-export default function Products(prop: any) {
+export default function Products(prop: propstype) {
   const price = parseFloat(prop.price);
   const discount = parseFloat(prop.discount);
   const discountedPrice = discount > 0 ? price - (price * discount) / 100 : price;
