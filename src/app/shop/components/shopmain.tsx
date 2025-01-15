@@ -1,4 +1,5 @@
 import Products from "@/app/shop/components/products";
+import { useEffect, useState } from "react";
 import product from "@/public/product1.png"
 import product1 from "@/public/product2.png"
 import product2 from "@/public/chooseus4.png"
@@ -16,109 +17,24 @@ import { LuSearch } from "react-icons/lu"; // Search Icon
 import Option from "./option";
 import Image from "next/image";
 
-export default function Main() {
+export default async function Main() {
     return (
         <section className="sm:flex sm:justify-center sm:gap-4">
 
             <div className="flex justify-center">
                 <div>
-                    <div>
+                    <div className="ml-4 mt-3">
                         <h2 className="flex items-center gap-1">Sort By:
                             <Option /></h2>
                     </div>
-                    <div className="mt-4  gap-4 grid grid-cols-2 md:grid-cols-3">
-                        <Products
-                            image={product}
-                            title={"Fresh Lime"}
-                            price={"45.00"}
-                            discount={"15"}
-                        />
-                        <Products
-                            image={product1}
-                            title={"Chocolate Muffin"}
-                            price={"28.00"}
-                            discount={"0"}
-                        />
-
-
-                        <Products
-                            image={product2}
-                            title={"Burger"}
-                            price={"45.00"}
-                            discount={"55"}
-                        />
-                        <Products
-                            image={product3}
-                            title={"Country Burger"}
-                            price={"45.00"}
-                            discount={"50"}
-                        />
-                        <Products
-                            image={product4}
-                            title={"Drink"}
-                            price={"23.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product5}
-                            title={"Pizza"}
-                            price={"43.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product6}
-                            title={"Cheese Butter"}
-                            price={"10.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product7}
-                            title={"Sandwiches"}
-                            price={"25.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product8}
-                            title={"Chicken Chup"}
-                            price={"12.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product3}
-                            title={"Country Burger"}
-                            price={"45.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product4}
-                            title={"Drink"}
-                            price={"23.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product5}
-                            title={"Pizza"}
-                            price={"43.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product6}
-                            title={"Cheese Butter"}
-                            price={"10.00"}
-                            discount={"0"}
-                        />
-                        <Products
-                            image={product7}
-                            title={"Sandwiches"}
-                            price={"25.00"}
-                            discount={"0"}
-                        />
+                    <div className="">
+                       {await Products()}
                     </div>
                 </div>
 
             </div>
             {/*right section*/}
-            <div className="flex justify-center sm:mt-10" >
+            <div className="flex justify-center sm:ml-20 sm:mt-10 md:ml-28" >
                 <div>
                     <div>
                         <div className="flex mt-5  ">
@@ -131,9 +47,9 @@ export default function Main() {
                                 <LuSearch className="text-white  text-2xl " />
                             </div>
                         </div>
-                        <div>
+                        <div className="text-2xl">
                             <div className="mb-3">
-                                <h1 className="text-xl font-bold">Category</h1>
+                                <h1 className="text-2xl font-bold">Category</h1>
                             </div>
                             <div>
                                 <div className="flex gap-2 mb-3">
@@ -196,24 +112,24 @@ export default function Main() {
                         </div>
                     </div>
                     <div>
-                        <Image src={banner} alt="" className="w-40 h-52" />
+                        <Image src={banner} alt="" className="w-52 h-64 lg:w-60 lg:h-72" />
                     </div>
                     <div className="mt-6">
-                        <h1 className="text-xl font-bold">Filter By Price</h1>
+                        <h1 className="text-2xl font-bold">Filter By Price</h1>
                         <Image src={priceline} alt="" />
                         <div className="flex justify-between w-60">
                             <p className="text-slate-500">From $0 to $8000</p>
                             <p className="text-slate-500">Filter</p>
                         </div>
                         <div className="mt-6">
-                            <h1 className="text-xl font-bold mb-3">Latest Products</h1>
+                            <h1 className="text-2xl font-bold mb-3">Latest Products</h1>
                             <Image src={component} alt="" className="mb-3" />
                             <Image src={component} alt="" className="mb-3" />
                             <Image src={component} alt="" className="mb-3" />
                             <Image src={component} alt="" className="mb-3" />
                         </div>
                         <div>
-                            <h1 className="text-xl font-bold">Product Tags</h1>
+                            <h1 className="text-2xl font-bold">Product Tags</h1>
                             <div className=" grid grid-cols-2 sm:grid-cols-3 ">
                                 <p className="hover:text-[#FF9F0D] cursor-pointer hover:border-b-2 hover:border-[#FF9F0D] w-20">Services</p>
                                 <p className="hover:text-[#FF9F0D] cursor-pointer hover:border-b-2 hover:border-[#FF9F0D] w-20">Our Menu</p>

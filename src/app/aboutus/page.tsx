@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Header from "../components/header";
 import Hero from "./components/abouthero";
 import Main from "./components/aboutmain";
@@ -14,6 +15,7 @@ export default function Aboutus(){
             <Team/>
             <Testimonials/>
             <Menu/>
+            <Footer/>
         </div>
     )
 }

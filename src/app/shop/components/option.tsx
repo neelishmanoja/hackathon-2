@@ -14,7 +14,7 @@ export default function Option() {
   };
 
   return (
-    <div className="flex items-center w-40 ">
+    <div className="flex items-center w-40 border border-black ">
       <Selector options={options} onChange={handleSelectionChange} />
     </div>
   );

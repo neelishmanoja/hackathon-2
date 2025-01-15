@@ -67,7 +67,7 @@ export default function Maincourse() {
 
                 {/*rightside*/}
                 <div className="flex justify-around mt-4">
-                    <Image src={maincoursepic} alt=""
+                    <Image src={maincoursepic} alt="" width={500} height={500}
                         className="w-80 h-96 sm:w-72 sm:h-[400px] "
                     />
                 </div>

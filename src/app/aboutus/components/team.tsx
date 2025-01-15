@@ -8,8 +8,8 @@ export default function Team() {
         <section>
             <div className="flex justify-center">
                 <div className="sm:flex">
-                    <Image src={bg} alt="" className="w-80 h-36 sm:w-[600px] sm:h-40 md:w-[700px]" />
-                    <div className="ml-20 mt-5 sm:absolute sm:flex sm:ml-0">
+                    <Image src={bg} alt="" className="w-80 h-36 sm:w-[600px] sm:h-40 md:w-[900px]" />
+                    <div className="ml-20 mt-5 sm:absolute sm:flex sm:ml-0 lg:ml-10">   
                         <Teamcard
                          image ={teampic}
                          title ={"Mark Henry"}

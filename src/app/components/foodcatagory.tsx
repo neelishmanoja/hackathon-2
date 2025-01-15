@@ -22,22 +22,22 @@ export default function Foodcatagory() {
                     <Image
                         src={img1}
                         alt="foodpic"
-                        className="w-[340px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
+                        className="w-[320px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
                     />
                     <Image
                         src={img2}
                         alt="fooditem" 
-                        className="w-[340px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
+                        className="w-[320px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
                     />
                     <Image
                         src={img3}
                         alt="fooditem"
-                        className="w-[340px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
+                        className="w-[320px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
                     />
                     <Image
                         src={img4}
                         alt="fooditem"
-                        className="w-[340px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
+                        className="w-[320px] h-56 mt-5 sm:w-36 sm:h-44 md:w-[160px] md:h-44 lg:w-48"
                     />
                 </div>
                 </div>

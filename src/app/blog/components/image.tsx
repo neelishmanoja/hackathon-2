@@ -16,7 +16,7 @@ export default function Box(prop: propstype) {
                     alt="products"
                     width={100}
                     height={100}
-                    className="w-24 h-24 sm:w-48"
+                    className="w-24 h-24 sm:w-48 lg:h-32"
                 />
                 <div>
                     <h2 className="text-slate-400 ml-3">{prop.title}</h2>

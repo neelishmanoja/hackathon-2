@@ -22,7 +22,7 @@ import { PiHandbagBold } from "react-icons/pi"; // Shopping Bag Icon
 export default function Header() {
     const [isOpen, setOpen] = useState(false)
     return (
-        <nav className="h-[87px] bg-black">
+        <nav className="h-[90px] bg-black">
 
             <div className=" flex justify-center">
                 <a href="/" className="text-2xl md:text-3xl lg:text-[40px] font-bold text-white">
@@ -32,7 +32,7 @@ export default function Header() {
             <div className="flex justify-between   ">
 
                 <div className="text-white space-x-4 hidden sm:block  sm:mt-5 lg:text-2xl md:ml-14 lg:ml-16  ">
-                    <a href="#home" className="hover:text-[#FF9F0D] transition sm:hidden">
+                    <a href="/" className="hover:text-[#FF9F0D] transition">
                         Home
                     </a>
                     <a href="/menu" className="hover:text-[#FF9F0D] transition">
@@ -50,7 +50,7 @@ export default function Header() {
                     <a href="/shop" className="hover:text-[#FF9F0D] transition">
                         Shop
                     </a>
-                    <a href="#contact" className="hover:text-[#FF9F0D] transition">
+                    <a href="/contactus" className="hover:text-[#FF9F0D] transition">
                         Contact
                     </a>
                 </div>
@@ -65,7 +65,7 @@ export default function Header() {
                     <LuSearch className="text-[#FF9F0D] text-2xl " />
                 </div>
                 {/*cart*/}
-                <PiHandbagBold className="text-white text-2xl mt-2 -ml-14 sm:-ml-12 sm:text-3xl md:-ml-[100px] lg:-ml-[220px]"/>
+                <PiHandbagBold className="text-white hover:text-[#FF9F0D] text-2xl mt-2 -ml-14 sm:-ml-12 sm:text-3xl md:-ml-[100px] lg:-ml-[20px]"/>
                 <div>
                     <Sheet>
                         <SheetTrigger className="text-white sm:hidden md:hidden block" ><Hamburger toggled={isOpen} toggle={setOpen} /></SheetTrigger>
@@ -104,7 +104,7 @@ export default function Header() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#contact" className="hover:text-[#FF9F0D] transition">
+                                            <a href="/contactus" className="hover:text-[#FF9F0D] transition">
                                                 Contact
                                             </a>
                                         </li>

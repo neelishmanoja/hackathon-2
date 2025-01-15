@@ -23,9 +23,14 @@ export default function Ourmenu() {
                 </div>
             </div>
             <div className="flex justify-center">
-                <Image src={textbar} alt=""
-                    className="h-[24px] w-[310px] sm:w-[550px] "
-                />
+                <div className="w-80 h-8 text-white border-2 space-x-3 mt-4 sm:w-96 sm:space-x-6 sm:ml-12 ">
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Breakfast</a>
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Lunch</a>
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Dinner</a>
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Dessert</a>
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Drink</a>
+                    <a href="" className="font-bold text-[13px] hover:text-[#FF9F0D] hover:border-b hover:border-[#FF9F0D]">Snack</a>
+                </div>
             </div>
             {/*left section*/}
             <div className="sm:flex sm:justify-center md:-ml-20 md:-mt-9 lg:gap-12">
@@ -38,7 +43,7 @@ export default function Ourmenu() {
                     </div>
 
                     <Image src={pic2} alt=""
-                        className="h-60 w-[330px] sm:w-[450px] sm:h-[260px] md:w-[380px]"
+                        className="h-60 w-[320px] sm:w-[450px] sm:h-[260px] md:w-[380px]"
                     />
                 </div>
                 <div className="flex justify-center sm:-ml-8">

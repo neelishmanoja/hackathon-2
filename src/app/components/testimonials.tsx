@@ -10,7 +10,7 @@ export default function Testimonials() {
             <div>
                 <div className="sm:ml-36">
                     <span className="text-[#FF9F0D] ml-6 font-mono font-semibold text-[20px] sm:text-[20px]  ">Testimonials</span>
-                    <h2 className="text-2xl text-white text-center -ml-3 -mt-1  w-[350px] sm:w-80 sm:text-2xl md:w-80 lg:font-semibold before:lg:text-[48px] lg:ml-7  " >
+                    <h2 className="text-2xl text-white text-center -ml-3 -mt-1  w-[320px] sm:w-80 sm:text-2xl md:w-80 lg:font-semibold before:lg:text-[48px] lg:ml-7  " >
                         <span className="text-[#FF9F0D] ">Wh</span>at our client are saying
                     </h2>
                 </div>

@@ -15,10 +15,10 @@ export default function Box2(prop: propstype) {
                     alt="products"
                     width={100}
                     height={100}
-                    className="w-16 h-16 "
+                    className="w-16 h-16 lg:w-32 lg:h-28"
                 />
-                <div className="flex gap-[86px]">
-                    <h2 className="font-bold ml-3">{prop.title}</h2>
+                <div className="flex  gap-[70px] lg:gap-[100px]">
+                    <h2 className="font-bold ml-6">{prop.title}</h2>
                     <p className="">{prop.text}</p>
                 </div>
             </div>
