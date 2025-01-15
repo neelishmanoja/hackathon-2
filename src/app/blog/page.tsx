@@ -3,13 +3,15 @@ import Header from "../components/header";
 import Hero from "./components/bloghero";
 import Main from "./components/blogmain";
 
-export default function Blog(){
+
+export default async function Blog(){
     return(
         <div>
             <Header/>
             <Hero/>
             <Main/>
             <Footer/>
+            
         </div>
     )
 }
