@@ -1,5 +1,7 @@
 // This is the schema for the blog collection in Sanity
 
+import { Rule } from "sanity";
+
 export const blog ={
     name: 'blog',
     title: 'Blogs',
@@ -32,7 +34,7 @@ export const blog ={
             options: {
                 source: 'title',
             },
-            validation: (Rule: any) => Rule.required(),
+            validation: (Rule:Rule) => Rule.required(),
         },
         
     ],

@@ -1,3 +1,4 @@
+import { Rule } from "sanity";
 
 
 export const shopProducts = {
@@ -26,7 +27,7 @@ export const shopProducts = {
         type: 'slug',
         options: {
             source: 'title',
-            validation: (Rule: any) => Rule.required(),
+            validation: (Rule: Rule) => Rule.required(),
         },
         },
         {

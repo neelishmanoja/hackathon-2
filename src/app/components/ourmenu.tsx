@@ -1,5 +1,4 @@
 import Image from "next/image";
-import textbar from "@/public/Text.png"
 import pic from "@/public/unsplash_Lv174o7fn7Y.png"
 import pic2 from "@/public/unsplash_INjdgkCwHp0.png"
 import leaf from "@/public/Lettuce Leaf.png"
