@@ -1,4 +1,4 @@
-import { validation } from "sanity";
+
 
 export const shopProducts = {
     name: 'shopProducts',

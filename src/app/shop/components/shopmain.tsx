@@ -1,14 +1,4 @@
 import Products from "@/app/shop/components/products";
-import { useEffect, useState } from "react";
-import product from "@/public/product1.png"
-import product1 from "@/public/product2.png"
-import product2 from "@/public/chooseus4.png"
-import product3 from "@/public/product3.png"
-import product4 from "@/public/drinks.png"
-import product5 from "@/public/product4.png"
-import product6 from "@/public/product5.png"
-import product7 from "@/public/product6.png"
-import product8 from "@/public/product7.png"
 import banner from "@/public/Banner.png"
 import priceline from "@/public/price_renge.png"
 import component from "@/public/Component.png"
