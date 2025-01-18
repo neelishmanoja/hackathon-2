@@ -22,8 +22,8 @@ export default async function BlogList() {
           <div key={blog.slug} className="mt-4 sm:ml-6">
             <Image src={urlFor(blog.image).url()}
               alt={blog.title}
-              width={800}
-              height={800}
+              width={500}
+              height={500}
               className="cursor-pointer w-[310px] h-60 sm:w-72 md:w-96 md:h-64 lg:w-[450px] lg:h-72 transition duration-300 ease-in-out scale-105 shadow-lg dark:hover:shadow-black/30" />
             <div className="flex gap-1 mt-4">
               <CiCalendar className="text-[#FF9F0D] mt-1" />
