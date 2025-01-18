@@ -12,7 +12,7 @@ export default function Hero() {
                     />
                     <div className="absolute text-white">
                         <div className="text-2xl font-bold">
-                            <h2>Our Shop</h2>
+                            <h2>Blogs</h2>
                         </div>
                         <div className="flex gap-1 mt-3">
                             <span>
