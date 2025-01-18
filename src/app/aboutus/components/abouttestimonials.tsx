@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Testimonials() {
     return (
-        <section className="flex justify-center sm:mt-44 md:mt-48">
+        <section className="flex justify-center  sm:mt-28 md:mt-28">
             <div>
                 <div>
                     <h1 className="text-[14px] text-[#FF9F0D] md:text-[18px]">Testimonials</h1>
