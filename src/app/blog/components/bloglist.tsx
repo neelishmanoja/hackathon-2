@@ -4,6 +4,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { CiCalendar } from "react-icons/ci";
 import { PiArrowLineUpRight, PiChats, PiUserCirclePlus } from "react-icons/pi";
+import { Blog } from "../../../../typings";
 
 
 
