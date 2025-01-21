@@ -10,26 +10,19 @@ import box4 from "@/public/chooseus4.png"
 import box5 from "@/public/product1.png"
 import Box2 from "./box2";
 import BlogList from "./bloglist";
-import { useEffect, useState } from "react";
+import MainPopularTags from "./mainpopulartags";
 
 
 
-export default function Main() {
-    const [blogList, setBlogList] = useState<JSX.Element | null>(null);
 
-    useEffect(() => {
-        const fetchBlogList = async () => {
-            const result = await BlogList();
-            setBlogList(result);
-        };
-        fetchBlogList();
-    }, []);
+export default async function Main() {
+   
     
     return (
         <section className="mt-16 sm:flex md:justify-center">
             <div className="flex justify-center lg:flex gap-y-10 ">
                 {/*left*/}
-                {blogList}
+                {await BlogList()}
                  
             </div>
             {/*right*/}
@@ -122,17 +115,8 @@ export default function Main() {
 
                     <div className="mt-8 border-2 w-72 sm:w-[310px] lg:w-[500px]">
                         <h1 className="font-bold lg:ml-5">Populer Tags</h1>
-                        <div className=" grid grid-cols-2 sm:grid-cols-3 gap-y-2 lg:ml-5 ml-1 pb-2" >
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-20 flex justify-center items-center">Sandwich</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-20 flex justify-center items-center">Tikka</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-12 flex justify-center items-center">Bbq</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-24 flex justify-center items-center">Restaurant</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-14 flex justify-center items-center">Health</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-16 flex justify-center items-center">Cookies</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-20 flex justify-center items-center">Pizza</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-32 flex justify-center items-center sm:-ml-5">Chicken Sharma</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-20 flex justify-center items-center ml-2">Fastfood</p>
-                            <p className="hover:text-[#FF9F0D] p-1 cursor-pointer border-2 border-slate-300 hover:border-[#FF9F0D] w-20 flex justify-center items-center">Burger</p>
+                        <div >
+                            <MainPopularTags />
                         </div>
                     </div>
                 </div>

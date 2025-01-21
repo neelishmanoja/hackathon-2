@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default async function Main() {
     return (
-        <section className="sm:flex sm:justify-center sm:gap-4 lg:gap-20">
+        <section className="sm:flex sm:justify-center sm:gap-4 ">
 
             <div className="flex justify-center">
                 <div>
@@ -24,7 +24,7 @@ export default async function Main() {
 
             </div>
             {/*right section*/}
-            <div className="flex justify-center sm:ml-20 sm:mt-10   " >
+            <div className="flex justify-center sm:ml-16 sm:mt-10   " >
                 <div>
                     <div>
                         <div className="flex mt-5  ">
