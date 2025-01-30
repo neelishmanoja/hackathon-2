@@ -65,7 +65,9 @@ export default function Header() {
                     <LuSearch className="text-[#FF9F0D] text-2xl " />
                 </div>
                 {/*cart*/}
+                <a href="/cart">
                 <PiHandbagBold className="text-white hover:text-[#FF9F0D] text-2xl mt-2 -ml-14 sm:-ml-12 sm:text-3xl md:-ml-[100px] lg:-ml-[20px]"/>
+                </a>
                 <div>
                     <Sheet>
                         <SheetTrigger className="text-white sm:hidden md:hidden block" ><Hamburger toggled={isOpen} toggle={setOpen} /></SheetTrigger>

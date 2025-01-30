@@ -1,3 +1,4 @@
+
 import Products from "@/app/shop/components/products";
 import banner from "@/public/Banner.png"
 import priceline from "@/public/price_renge.png"
@@ -8,6 +9,7 @@ import Option from "./option";
 import Image from "next/image";
 
 export default async function Main() {
+    
     return (
         <section className="sm:flex sm:justify-center sm:gap-4 ">
 
@@ -18,7 +20,7 @@ export default async function Main() {
                             <Option /></h2>
                     </div>
                     <div className="">
-                       {await Products()}
+                         <Products/>
                     </div>
                 </div>
 

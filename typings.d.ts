@@ -18,6 +18,7 @@ type Food ={
     tags: string;
     description: string;
     available: boolean;
+    quantity: number;
 }
 
 type Chef ={
@@ -31,3 +32,15 @@ type Chef ={
     available: boolean;
     position: string;
 }
+
+ export type CartItem ={
+    name: string;
+    price: number;
+}
+export interface CartContextType {
+    cart: CartItem[];
+    addToCart: (item: CartItem) => void;
+    removeFromCart: (index: number) => void;
+    getTotalPrice: () => string;
+  }
+  
