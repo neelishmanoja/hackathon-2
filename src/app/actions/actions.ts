@@ -1,4 +1,3 @@
-import exp from "constants";
 import { Food } from "../../../typings";
 
 export const addtocart = (food : Food) =>{
