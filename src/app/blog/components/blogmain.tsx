@@ -1,4 +1,4 @@
-"use client";
+
 import Image from "next/image";
 import Box from "./image";
 import { LuSearch } from "react-icons/lu"; //sreach icon
@@ -22,7 +22,7 @@ export default async function Main() {
         <section className="mt-16 sm:flex md:justify-center">
             <div className="flex justify-center lg:flex gap-y-10 ">
                 {/*left*/}
-                {await BlogList()}
+                 {await BlogList()}
                  
             </div>
             {/*right*/}
