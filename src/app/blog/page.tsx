@@ -9,7 +9,7 @@ export default async function Blog(){
         <div>
             <Header/>
             <Hero/>
-            <Main/>
+            {await Main()}
             <Footer/>
             
         </div>
