@@ -15,14 +15,14 @@ import MainPopularTags from "./mainpopulartags";
 
 
 
-export default async function Main() {
+export default  function Main() {
    
     
     return (
         <section className="mt-16 sm:flex md:justify-center">
             <div className="flex justify-center lg:flex gap-y-10 ">
                 {/*left*/}
-                 {await BlogList()}
+                 <BlogList />
                  
             </div>
             {/*right*/}

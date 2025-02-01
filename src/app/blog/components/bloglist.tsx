@@ -1,25 +1,40 @@
-
+"use client"
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { CiCalendar } from "react-icons/ci";
 import { PiArrowLineUpRight, PiChats, PiUserCirclePlus } from "react-icons/pi";
 import { Blog } from "../../../../typings";
+import { useEffect, useState } from "react";
 
 
 
 
-export default async function BlogList() {
+export default  function BlogList() {
+  const [blogData,setBlogData] = useState<Blog[]>([]);
+  useEffect(() => {
+    const fetchedData = async () => {
 
-  const query = `*[_type=='blog'] | order(_createdAt asc){
-                image,title,date,description,
-                "slug":slug.current }`
 
-  const blogs: Blog[] = await client.fetch(query);
+      try {
+        const query = `*[_type=='blog'] | order(_createdAt asc){
+        image,title,date,description,
+        "slug":slug.current }`
+
+        const blogs = await client.fetch(query);
+         setBlogData(blogs)
+      } catch (error) {
+         console.error("error Fetching blog data",error)
+      }
+    };
+    fetchedData()
+  },[])
+
+
   return (
     <div>
       {
-        blogs.map((blog: Blog) => (
+        blogData.map((blog: Blog) => (
           <div key={blog.slug} className="mt-4 sm:ml-6">
             <Image src={urlFor(blog.image).url()}
               alt={blog.title}
