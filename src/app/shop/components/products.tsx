@@ -48,6 +48,7 @@ export default function Products() {
     e.preventDefault();
     toast.success(`${food.name} Added to Cart`);
     addtocart(food);
+    
   };
 
   return (

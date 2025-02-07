@@ -6,9 +6,12 @@ import { Food } from "../../../typings";
 import { getCartItems, removeFromCart, updateCartquantity } from "../actions/actions";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+import { useRouter } from "next/navigation"; // Import router
 
 export default function CartPage() {
   const [cartItem, setCartItem] = useState<Food[]>([]);
+  const router = useRouter(); // Initialize router
+
 
   useEffect(() => {
     setCartItem(getCartItems());
@@ -52,6 +55,7 @@ export default function CartPage() {
   };
 
   const handleProceed = () => {
+    router.push("/checkoutpage")
     Swal.fire({
       title: "Proceed to Checkout?",
       text: "Please review your cart before checkout",
