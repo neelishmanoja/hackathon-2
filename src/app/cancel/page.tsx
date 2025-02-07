@@ -10,8 +10,9 @@ export default function CancelPage() {
       <div className="w-full max-w-md px-8 py-10 bg-white shadow-lg rounded-xl border border-gray-200">
         <h1 className="text-3xl font-semibold text-center text-red-600 mb-6">Payment Cancelled</h1>
         <p className="text-lg text-center text-gray-600 mb-8">
-          We're sorry, but it seems that your payment was cancelled. If this was a mistake or if you changed your mind, please feel free to try again.
+          We&apos;re sorry, but it seems that your payment was cancelled. If this was a mistake or if you changed your mind, please feel free to try again.
         </p>
+
 
         <button
           onClick={() => router.push("/")}

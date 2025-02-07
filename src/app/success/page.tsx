@@ -3,8 +3,16 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+interface SessionData {
+  userId: string;
+  email: string;
+  token: string;
+  id: number;
+  amount_total: number;
+}
+
 export default function SuccessPage() {
-  const [sessionData, setSessionData] = useState<any>(null);
+  const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const router = useRouter();
 
   useEffect(() => {
